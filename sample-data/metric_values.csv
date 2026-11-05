@@ -1,0 +1,14 @@
+metric_id,period,value,unit
+M01,Q3 2026,44.6,$M
+M02,Q3 2026,26.3,$M
+M03,Q3 2026,12.9,$M
+M04,Q3 2026,5.4,$M
+M05,Q3 2026,47.2,%
+M06,Q3 2026,61.4,%
+M07,Q3 2026,14.2,weeks
+M08,Q3 2026,9.8,%
+M09,Q3 2026,412600,customers
+M10,Q3 2026,31.8,$M
+M01,Q1 2026 as reported,42.18,$M
+M02,Q1 2026 as reported,27.6,$M
+M03,Q1 2026 as reported,14.58,$M

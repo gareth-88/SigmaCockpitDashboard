@@ -1,7 +1,0 @@
-metric_id,period,asked_at,asked_by_role,question,answer,query_summary,scope
-M01,Q3 2026,2027-01-12 08:40,CGO,How did Q3 revenue split by channel?,"$44.6M: stores $26.3M, online $12.9M, wholesale $5.4M.","Net revenue v1.1, by channel, Q3 2026, all regions",Certified
-M03,Q3 2026,2027-01-12 09:15,"Regional director, Mountain","What was online revenue in Q3, without wholesale orders placed online?","$12.9M. The 1,184 wholesale orders placed through Shopify are counted in wholesale, from their NetSuite invoices.","Online (DTC) net revenue v1.1, Q3 2026, all regions",Certified
-M06,Q3 2026,2027-01-12 09:32,VP Merchandising,Which category had the best sell-through in the Mountain region?,"Insulated outerwear, at 68.3% season to date.","Sell-through v1.0, by category, Mountain region, season to date",Certified
-M07,Q3 2026,2027-01-12 10:05,"Planner, footwear",How many weeks of supply do we have in footwear?,11.6 weeks. Provisional: two stores sent late inventory snapshots.,"Weeks of supply v1.0, footwear, all stores",Provisional
-M09,Q3 2026,2027-01-12 10:20,Marketing manager,How many active customers did we have last quarter?,"412,600 under the draft definition. Not for distribution until the CFO approves it.","Active customers v0.9 draft, last 12 months",Provisional
-M01,Q1 2026 as reported,2026-04,Analyst,Summarise Q1 revenue by channel for the board.,"$42.2M: stores $27.6M, online $14.6M.",No certified metric. Two uploaded exports.,Outside certified scope

@@ -1,0 +1,24 @@
+metric_id,period,check_name,what_it_checks,expected,actual,unit,variance_pct,tolerance_pct,result,note,run_at
+M01,Q3 2026,Channels add up to the total,Stores plus online plus wholesale equals net revenue.,44.6,44.6,$M,0.0,0.0,Pass,,2027-01-12 06:10
+M01,Q3 2026,Ties to the general ledger,Net revenue agrees with the revenue accounts in NetSuite.,44.63,44.6,$M,-0.07,0.5,Pass,,2027-01-12 06:10
+M01,Q3 2026,No order counted in two systems,Wholesale orders placed through Shopify are matched to their NetSuite invoice and counted once.,0,0,$M,,,Pass,"1,184 wholesale orders placed online were matched and counted in wholesale only.",2027-01-12 06:10
+M02,Q3 2026,Ties to store point of sale,Store revenue agrees with the till totals from all stores.,26.31,26.3,$M,-0.04,0.5,Pass,,2027-01-12 06:10
+M02,Q3 2026,Every store reported,All 60 stores loaded their nightly sales.,60,60,stores,,,Pass,,2027-01-12 06:10
+M03,Q3 2026,No order counted in two systems,Wholesale orders placed through Shopify are excluded from online revenue.,0,0,$M,,,Pass,"1,184 wholesale orders placed online were moved to wholesale.",2027-01-12 06:10
+M03,Q3 2026,Ties to Shopify payouts,Online revenue agrees with Shopify payouts for consumer orders.,12.93,12.9,$M,-0.23,1.0,Pass,,2027-01-12 06:10
+M04,Q3 2026,Comes from NetSuite invoices only,Wholesale revenue equals posted NetSuite invoices.,5.4,5.4,$M,0.0,0.0,Pass,,2027-01-12 06:10
+M04,Q3 2026,Online wholesale orders matched,Every wholesale order placed through Shopify has a matching invoice.,1184,1184,orders,,,Pass,,2027-01-12 06:10
+M05,Q3 2026,Cost of goods ties to the ledger,Cost of goods agrees with the NetSuite cost accounts.,23.57,23.54,$M,-0.13,0.5,Pass,,2027-01-12 06:10
+M05,Q3 2026,Within 3 points of last year,"Margin is within 3 points of the same quarter last year, or explained.",46.5,47.2,%,,,Pass,Up 0.7 points on Q3 2025.,2027-01-12 06:10
+M06,Q3 2026,Units tie to the inventory ledger,Units sold and received agree with NetSuite inventory movements.,184200,184050,units,-0.08,0.5,Pass,,2027-01-12 06:10
+M06,Q3 2026,Every store reported,All 60 stores loaded their nightly sales.,60,60,stores,,,Pass,,2027-01-12 06:10
+M07,Q3 2026,Every store reported inventory,All 60 stores loaded their nightly inventory snapshot.,60,58,stores,,,Warn,Two stores sent late snapshots. Their previous-day figures are used until the next load.,2027-01-12 06:10
+M07,Q3 2026,Uses the approved merchandise plan,Forward weekly sales come from the plan version the CGO approved.,1,1,match,,,Pass,,2027-01-12 06:10
+M08,Q3 2026,Refunds tie to the ledger,Shopify refunds agree with the NetSuite refund accounts.,1.41,1.4,$M,-0.71,1.0,Pass,,2027-01-12 06:10
+M09,Q3 2026,Customers matched across systems,"Share of customer records matched across Shopify, NetSuite and Salesforce, target 95%.",95.0,94.1,%,,,Warn,Below target. 5.9% of records still need a match rule.,2027-01-12 06:10
+M10,Q3 2026,Ties to the general ledger,Inventory at cost agrees with the NetSuite inventory accounts.,31.84,31.8,$M,-0.13,0.5,Pass,,2027-01-12 06:10
+M01,Q1 2026 as reported,Channels add up to the total,Stores plus online plus wholesale equals net revenue.,42.18,42.18,$M,0.0,0.0,Pass,The figure added up. Arithmetic checks alone could not catch this error.,Replayed 2027-01-08
+M01,Q1 2026 as reported,Ties to the general ledger,Net revenue agrees with the revenue accounts in NetSuite.,38.0,42.18,$M,11.0,0.5,Fail,,Replayed 2027-01-08
+M01,Q1 2026 as reported,No order counted in two systems,Wholesale orders placed through Shopify are matched to their NetSuite invoice and counted once.,0,4.18,$M,,,Fail,"1,026 wholesale orders were counted in Shopify and again in NetSuite.",Replayed 2027-01-08
+M02,Q1 2026 as reported,Ties to store point of sale,Store revenue agrees with the till totals from all stores.,22.5,27.6,$M,22.67,0.5,Fail,The NetSuite pull labelled as store revenue also held wholesale invoices.,Replayed 2027-01-08
+M03,Q1 2026 as reported,No order counted in two systems,Wholesale orders placed through Shopify are excluded from online revenue.,0,4.18,$M,,,Fail,"Online revenue included 1,026 wholesale orders.",Replayed 2027-01-08
